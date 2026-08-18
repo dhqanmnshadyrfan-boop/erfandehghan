@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حساب من | Mobile GSM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="pages.css?v=2">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="topbar"><div class="container topbar-row"><p>ضمانت اصالت کالا · ارسال به سراسر کشور · پشتیبانی فنی رایگان</p></div></div>
+  <div class="container header-row">
+    <a class="logo" href="/">
+      <span class="logo-mark"><svg viewBox="0 0 40 40" width="34" height="34"><rect x="18" y="6" width="28" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="22" y="13" width="20" height="34" rx="1" fill="currentColor" opacity=".15"/><circle cx="32" cy="53" r="2.2" fill="currentColor"/><rect x="27" y="8.5" width="10" height="2.4" rx="1.2" fill="currentColor" opacity=".6"/></svg></span>
+      <span class="logo-text">Mobile<b>GSM</b></span>
+    </a>
+    <div class="search-bar">
+      <input type="text" placeholder="جستجوی گوشی، برند یا لوازم جانبی...">
+      <button aria-label="جستجو"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg></button>
+    </div>
+    <nav class="header-actions">
+      <a href="account.html" class="icon-btn active-nav">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21a8 8 0 1 0-16 0" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <span>حساب من</span>
+      </a>
+      <a href="cart.html" class="icon-btn cart-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6"/></svg>
+        <span>سبد خرید</span>
+        <em>0</em>
+      </a>
+    </nav>
+  </div>
+  <nav class="cat-nav">
+    <div class="container cat-nav-row">
+      <a href="index.html#categories">همه دسته‌بندی‌ها</a>
+      <a href="index.html#products">گوشی موبایل</a>
+      <a href="index.html#products">باند و اسپیکر</a>
+      <a href="index.html#products">مودم و روتر</a>
+      <a href="index.html#products">لوازم جانبی</a>
+      <a href="index.html#deals">تخفیف‌های ویژه</a>
+    </div>
+  </nav>
+</header>
+
+<div class="container breadcrumb">
+  <a href="/">فروشگاه</a><span>/</span><b>حساب من</b>
+</div>
+
+<section class="section account-page">
+  <div class="container account-row" id="account-app" style="display:none;">
+
+    <!-- simple sidebar -->
+    <aside class="account-side">
+      <div class="account-avatar">
+        <svg viewBox="0 0 24 24" width="30" height="30"><path d="M20 21a8 8 0 1 0-16 0" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </div>
+      <h3 id="account-name">علی رضایی</h3>
+      <span class="account-phone">۰۹۱۲۱۲۳۴۵۶۷</span>
+
+      <nav class="account-menu">
+        <a href="#profile" class="active"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 21a8 8 0 1 0-16 0" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg> اطلاعات حساب</a>
+        <a href="#orders"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 8l-9-5-9 5 9 5 9-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 8v8l9 5 9-5V8M12 13v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> سفارش‌های من</a>
+        <a href="#favorites"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 21s-7-4.35-9.5-8.5C.7 8.9 2.3 5 6 5c2 0 3.4 1 4 2 .6-1 2-2 4-2 3.7 0 5.3 3.9 3.5 7.5C19 16.65 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="2"/></svg> علاقه‌مندی‌ها</a>
+        <a href="cart.html"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="9" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" fill="none" stroke="currentColor" stroke-width="2"/></svg> سبد خرید</a>
+        <a href="/" class="logout" id="logout-link"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 17l5-5-5-5M21 12H9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> خروج از حساب</a>
+      </nav>
+    </aside>
+
+    <!-- simple content -->
+    <div class="account-main">
+
+      <div class="account-card" id="profile">
+        <h3>اطلاعات حساب</h3>
+        <form class="account-form" id="account-form">
+          <label>نام و نام خانوادگی
+            <input type="text" id="account-name-input" value="علی رضایی">
+          </label>
+          <label>شماره موبایل
+            <input type="tel" id="account-phone-input" value="۰۹۱۲۱۲۳۴۵۶۷">
+          </label>
+          <label>ایمیل
+            <input type="email" id="account-email-input" placeholder="ایمیل خود را وارد کنید">
+          </label>
+          <label>آدرس
+            <input type="text" id="account-address-input" placeholder="آدرس برای ارسال سفارش">
+          </label>
+          <button type="submit" class="btn btn-primary">ذخیره تغییرات</button>
+          <p class="save-msg" id="save-msg"></p>
+        </form>
+      </div>
+
+      <div class="account-card" id="orders">
+        <h3>سفارش‌های من</h3>
+        <p class="empty-hint" id="orders-empty">هنوز سفارشی ثبت نکرده‌اید.</p>
+        <ul class="order-list" id="orders-list"></ul>
+      </div>
+
+      <div class="account-card" id="favorites">
+        <h3>علاقه‌مندی‌ها</h3>
+        <p class="empty-hint" id="favorites-empty">هنوز محصولی به لیست علاقه‌مندی‌ها اضافه نکرده‌اید.</p>
+        <ul class="favorites-list" id="favorites-list"></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container auth-wrap" id="auth-gate">
+    <div class="auth-box">
+      <div class="auth-tabs">
+        <button type="button" class="auth-tab active" data-tab="login">ورود</button>
+        <button type="button" class="auth-tab" data-tab="register">ثبت‌نام</button>
+      </div>
+
+      <form class="auth-form" id="login-form">
+        <label>شماره موبایل
+          <input type="tel" id="login-phone" placeholder="۰۹xxxxxxxxx" required>
+        </label>
+        <label>رمز عبور
+          <input type="password" id="login-password" required>
+        </label>
+        <button type="button" class="link-btn" id="forgot-password-link">رمز عبور را فراموش کرده‌اید؟</button>
+        <p class="form-error" id="login-error"></p>
+        <p class="form-notice" id="login-notice"></p>
+        <button type="submit" class="btn btn-primary">ورود به حساب</button>
+      </form>
+
+      <form class="auth-form" id="register-form" hidden>
+        <div class="auth-form-row">
+          <label>نام
+            <input type="text" id="reg-first" required>
+          </label>
+          <label>نام خانوادگی
+            <input type="text" id="reg-last" required>
+          </label>
+        </div>
+        <label>شماره موبایل
+          <input type="tel" id="reg-phone" placeholder="۰۹xxxxxxxxx" required>
+        </label>
+        <label>رمز عبور
+          <input type="password" id="reg-password" required>
+        </label>
+        <p class="form-error" id="register-error"></p>
+        <button type="submit" class="btn btn-primary">ساخت حساب و ورود</button>
+      </form>
+
+      <form class="auth-form" id="forgot-phone-form" hidden>
+        <p class="form-hint">شماره موبایل حساب خود را وارد کنید تا کد تایید برایتان ارسال شود.</p>
+        <label>شماره موبایل
+          <input type="tel" id="forgot-phone" placeholder="۰۹xxxxxxxxx" required>
+        </label>
+        <p class="form-error" id="forgot-phone-error"></p>
+        <button type="button" class="link-btn" id="back-to-login-1">بازگشت به ورود</button>
+        <button type="submit" class="btn btn-primary">ارسال کد تایید</button>
+      </form>
+
+      <form class="auth-form" id="forgot-code-form" hidden>
+        <p class="form-hint" id="forgot-code-hint"></p>
+        <label>کد تایید
+          <input type="text" id="forgot-code" placeholder="کد ۴ رقمی" inputmode="numeric" maxlength="4" required>
+        </label>
+        <label>رمز عبور جدید
+          <input type="password" id="forgot-new-password" placeholder="حداقل ۴ کاراکتر" required>
+        </label>
+        <p class="form-error" id="forgot-code-error"></p>
+        <div class="auth-form-links">
+          <button type="button" class="link-btn" id="resend-code-btn">ارسال مجدد کد</button>
+          <button type="button" class="link-btn" id="back-to-login-2">بازگشت به ورود</button>
+        </div>
+        <button type="submit" class="btn btn-primary">تغییر رمز عبور</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="/"><span class="logo-mark"><svg viewBox="0 0 40 40" width="30" height="30"><rect x="18" y="6" width="28" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="22" y="13" width="20" height="34" rx="1" fill="currentColor" opacity=".15"/><circle cx="32" cy="53" r="2.2" fill="currentColor"/><rect x="27" y="8.5" width="10" height="2.4" rx="1.2" fill="currentColor" opacity=".6"/></svg></span><span class="logo-text">Mobile<b>GSM</b></span></a>
+      <p>فروشگاه تخصصی گوشی موبایل و لوازم جانبی؛ از خرید گوشی تا انتخاب لوازم جانبی، کنار شما هستیم.</p>
+    </div>
+    <div class="footer-col">
+      <h4>لینک‌های پرکاربرد</h4>
+      <a href="index.html#products">گوشی موبایل</a><a href="index.html#products">باند و اسپیکر</a><a href="index.html#products">مودم و روتر</a><a href="index.html#products">لوازم جانبی</a>
+    </div>
+    <div class="footer-col">
+      <h4>دسترسی سریع</h4>
+      <a href="about.html#support">پشتیبانی</a><a href="about.html#about">درباره ما</a><a href="about.html#faq">سوالات متداول</a><a href="about.html#terms">شرایط و قوانین</a>
+    </div>
+    <div class="footer-col footer-social">
+      <h4>MobileGSM در شبکه‌های اجتماعی</h4>
+      <div class="social-row">
+        <a class="social-btn" href="https://instagram.com/mobilegsm" target="_blank" rel="noopener noreferrer" aria-label="صفحه اینستاگرام MobileGSM">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© ۱۴۰۵ Mobile GSM — تمامی حقوق محفوظ است.</span>
+    <span class="dev-tag">ساخته شده توسط عرفان دهقان</span>
+  </div>
+</footer>
+
+<script src="site.js?v=3"></script>
+<script src="account.js?v=3"></script>
+</body>
+</html>

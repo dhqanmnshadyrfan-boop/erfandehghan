@@ -1,0 +1,9 @@
+{
+  "name": "mobilegsm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MobileGSM storefront + backend (auth API + static file server)",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

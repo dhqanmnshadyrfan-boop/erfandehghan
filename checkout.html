@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اطلاعات ارسال | Mobile GSM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="pages.css?v=2">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="topbar"><div class="container topbar-row"><p>ضمانت اصالت کالا · ارسال به سراسر کشور · پشتیبانی فنی رایگان</p></div></div>
+  <div class="container header-row">
+    <a class="logo" href="/">
+      <span class="logo-mark"><svg viewBox="0 0 40 40" width="34" height="34"><rect x="18" y="6" width="28" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="22" y="13" width="20" height="34" rx="1" fill="currentColor" opacity=".15"/><circle cx="32" cy="53" r="2.2" fill="currentColor"/><rect x="27" y="8.5" width="10" height="2.4" rx="1.2" fill="currentColor" opacity=".6"/></svg></span>
+      <span class="logo-text">Mobile<b>GSM</b></span>
+    </a>
+    <div class="search-bar">
+      <input type="text" placeholder="جستجوی گوشی، برند یا لوازم جانبی...">
+      <button aria-label="جستجو"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg></button>
+    </div>
+    <nav class="header-actions">
+      <a href="account.html" class="icon-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>حساب من</span>
+      </a>
+      <a href="cart.html" class="icon-btn cart-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6"/></svg>
+        <span>سبد خرید</span>
+        <em>0</em>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<div class="container breadcrumb">
+  <a href="/">فروشگاه</a><span>/</span><a href="cart.html">سبد خرید</a><span>/</span><b>اطلاعات ارسال</b>
+</div>
+
+<section class="section order-success-page">
+  <div class="container">
+
+    <div class="auth-wrap" id="checkout-form-wrap" style="display:none;">
+      <div class="auth-box">
+        <h3 style="margin:0 0 4px;">اطلاعات ارسال سفارش</h3>
+        <p class="form-hint" id="checkout-summary"></p>
+
+        <form class="auth-form" id="shipping-form">
+          <label class="ship-address-label">آدرس کامل
+            <textarea id="ship-address-input" rows="3" placeholder="استان، شهر، خیابان، کوچه..."></textarea>
+          </label>
+
+          <div class="auth-form-row">
+            <label>پلاک
+              <input type="text" id="ship-plaque-input" inputmode="numeric" placeholder="مثلاً ۱۲" required>
+            </label>
+            <label>واحد
+              <input type="text" id="ship-unit-input" inputmode="numeric" placeholder="مثلاً ۳" required>
+            </label>
+          </div>
+
+          <label>کد پستی
+            <input type="text" id="ship-postal-input" inputmode="numeric" maxlength="10" placeholder="کد پستی ۱۰ رقمی" required>
+          </label>
+
+          <p class="form-error" id="shipping-error"></p>
+          <button type="submit" class="btn btn-primary" id="shipping-submit-btn">تکمیل خرید و پرداخت</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="checkout-empty" class="order-status-box" style="display:none;">
+      <h2>سبد خرید شما خالی است</h2>
+      <p class="order-note">برای تکمیل خرید ابتدا محصولی به سبد خرید اضافه کنید.</p>
+      <a href="cart.html" class="btn btn-primary">رفتن به سبد خرید</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="/"><span class="logo-mark"><svg viewBox="0 0 40 40" width="30" height="30"><rect x="18" y="6" width="28" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="22" y="13" width="20" height="34" rx="1" fill="currentColor" opacity=".15"/><circle cx="32" cy="53" r="2.2" fill="currentColor"/><rect x="27" y="8.5" width="10" height="2.4" rx="1.2" fill="currentColor" opacity=".6"/></svg></span><span class="logo-text">Mobile<b>GSM</b></span></a>
+      <p>فروشگاه تخصصی گوشی موبایل و لوازم جانبی؛ از خرید گوشی تا انتخاب لوازم جانبی، کنار شما هستیم.</p>
+    </div>
+    <div class="footer-col">
+      <h4>لینک‌های پرکاربرد</h4>
+      <a href="index.html#products">گوشی موبایل</a><a href="index.html#products">باند و اسپیکر</a><a href="index.html#products">مودم و روتر</a><a href="index.html#products">لوازم جانبی</a>
+    </div>
+    <div class="footer-col">
+      <h4>دسترسی سریع</h4>
+      <a href="about.html#support">پشتیبانی</a><a href="about.html#about">درباره ما</a><a href="about.html#faq">سوالات متداول</a><a href="about.html#terms">شرایط و قوانین</a>
+    </div>
+    <div class="footer-col footer-social">
+      <h4>MobileGSM در شبکه‌های اجتماعی</h4>
+      <div class="social-row">
+        <a class="social-btn" href="https://instagram.com/mobilegsm" target="_blank" rel="noopener noreferrer" aria-label="صفحه اینستاگرام MobileGSM">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© ۱۴۰۵ Mobile GSM — تمامی حقوق محفوظ است.</span>
+    <span class="dev-tag">ساخته شده توسط عرفان دهقان</span>
+  </div>
+</footer>
+
+<script src="site.js?v=3"></script>
+<script src="checkout.js?v=2"></script>
+</body>
+</html>

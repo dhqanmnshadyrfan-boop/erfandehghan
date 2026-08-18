@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>پنل مدیریت | Mobile GSM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="pages.css?v=2">
+<link rel="stylesheet" href="admin.css?v=2">
+</head>
+<body>
+
+<header class="admin-topbar">
+  <div class="container admin-topbar-row">
+    <span class="admin-brand">Mobile<b>GSM</b> · پنل مدیریت</span>
+    <button class="btn btn-ghost admin-logout-btn" id="admin-logout-btn" style="display:none;">خروج</button>
+  </div>
+</header>
+
+<!-- ================= LOGIN GATE ================= -->
+<section class="admin-login-wrap" id="admin-login-wrap">
+  <div class="auth-box">
+    <h3 style="margin:0 0 18px;">ورود به پنل مدیریت</h3>
+    <form class="auth-form" id="admin-login-form">
+      <label>نام کاربری
+        <input type="text" id="admin-username" autocomplete="username" required>
+      </label>
+      <label>رمز عبور
+        <input type="password" id="admin-password" autocomplete="current-password" required>
+      </label>
+      <p class="form-error" id="admin-login-error"></p>
+      <button type="submit" class="btn btn-primary">ورود</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+<section class="admin-dashboard" id="admin-dashboard" style="display:none;">
+  <div class="container">
+
+    <div class="admin-tabs">
+      <button type="button" class="admin-tab active" data-tab="orders">سفارش‌ها</button>
+      <button type="button" class="admin-tab" data-tab="users">کاربران</button>
+      <button type="button" class="admin-tab" data-tab="cache">سرعت سایت</button>
+    </div>
+
+    <!-- ---------------- Orders ---------------- -->
+    <div class="admin-panel" id="admin-panel-orders">
+      <div class="admin-panel-head">
+        <h3>سفارش‌ها</h3>
+        <button class="btn btn-ghost" id="refresh-orders-btn">به‌روزرسانی</button>
+      </div>
+      <div class="admin-loading" id="orders-admin-loading" style="display:none;">
+        <div class="spinner"></div>
+        <p>در حال بارگذاری سفارش‌ها...</p>
+      </div>
+      <p class="empty-hint" id="orders-admin-empty">هنوز سفارشی ثبت نشده.</p>
+      <div class="admin-table-wrap">
+        <table class="admin-table" id="orders-admin-table" style="display:none;">
+          <thead>
+            <tr>
+              <th>کد سفارش</th>
+              <th>خریدار</th>
+              <th>شماره تماس</th>
+              <th>آدرس</th>
+              <th>اقلام</th>
+              <th>مبلغ کل</th>
+              <th>وضعیت</th>
+              <th>تاریخ</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="orders-admin-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ---------------- Users ---------------- -->
+    <div class="admin-panel" id="admin-panel-users" style="display:none;">
+      <div class="admin-panel-head">
+        <h3>کاربران ثبت‌نام‌شده</h3>
+        <div class="admin-panel-head-actions">
+          <input type="text" id="users-search-input" class="admin-search-input" placeholder="جستجوی نام کاربر...">
+          <button class="btn btn-ghost" id="refresh-users-btn">به‌روزرسانی</button>
+        </div>
+      </div>
+      <div class="admin-loading" id="users-admin-loading" style="display:none;">
+        <div class="spinner"></div>
+        <p>در حال بارگذاری کاربران...</p>
+      </div>
+      <p class="empty-hint" id="users-admin-empty">هنوز کاربری ثبت‌نام نکرده.</p>
+      <div class="admin-table-wrap">
+        <table class="admin-table" id="users-admin-table" style="display:none;">
+          <thead>
+            <tr>
+              <th>نام و نام‌خانوادگی</th>
+              <th>شماره موبایل</th>
+              <th>ایمیل</th>
+              <th>آدرس</th>
+              <th>وضعیت</th>
+              <th>تاریخ ثبت‌نام</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="users-admin-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ---------------- Site speed / cache ---------------- -->
+    <div class="admin-panel" id="admin-panel-cache" style="display:none;">
+      <div class="admin-panel-head">
+        <h3>سرعت سایت</h3>
+      </div>
+      <p class="cache-desc">
+        سرور برای سرعت بیشتر، نسخه‌ی فشرده‌شده‌ی فایل‌های سایت رو در حافظه نگه می‌داره تا هر بار
+        مجبور نباشه از نو آماده‌شون کنه. این حافظه هر ۲۴ ساعت به‌صورت خودکار هم پاک‌سازی می‌شه، ولی
+        اگه بعد از آپدیت فایل‌های سایت می‌خواید فوراً همه‌چیز تازه بشه، این دکمه رو بزنید.
+      </p>
+      <button class="btn btn-primary" id="reset-cache-btn">ریست کش سایت</button>
+      <p class="cache-status" id="cache-status"></p>
+    </div>
+
+  </div>
+</section>
+
+<script src="admin.js?v=3"></script>
+</body>
+</html>
